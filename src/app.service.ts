@@ -17,11 +17,11 @@ export class AppService {
   }
 
   async withoutTrace(): Promise<string | void> {
-    return this.withTrace2().catch(console.error)
+    return this.withoutTrace2().catch(console.error)
   }
 
   async withoutTrace1(): Promise<string> {
-    return this.withTrace2() // without await
+    return this.withoutTrace2() // without await
   }
 
   async withoutTrace2(): Promise<string> {
